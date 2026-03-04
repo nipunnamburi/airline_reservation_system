@@ -9,42 +9,42 @@ public class HomeController {
     // Home Page
     @GetMapping("/")
     public String home() {
-        return "index";   // Loads index.html
+        return "index";
     }
 
     // Flight Search Page
     @GetMapping("/search")
     public String searchPage() {
-        return "search";  // Loads search.html
+        return "search";
     }
 
     // Booking Page
     @GetMapping("/booking")
     public String bookingPage() {
-        return "booking";         // Loads booking.html
+        return "booking";
     }
 
     // Booking Success Page
     @GetMapping("/booking/success")
     public String bookingSuccessPage() {
-        return "booking-success"; // Loads booking-success.html
+        return "booking-success";
     }
 
     // Admin Dashboard Page
     @GetMapping("/admin")
     public String adminPage() {
-        return "admin-dashboard"; // Loads admin-dashboard.html
+        return "admin-dashboard";
     }
 
     // Login Page
     @GetMapping("/login")
     public String loginPage() {
-        return "login";           // Loads login.html
+        return "login";
     }
 
-    // Logout Redirect (Optional)
+    // Logout Redirect
     @GetMapping("/logout-success")
     public String logoutSuccess() {
-        return "logout-success";  // Create this if needed
+        return "logout-success";
     }
 }
